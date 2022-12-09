@@ -1,0 +1,154 @@
+/* css reset */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* navigation bar */
+#navbar{
+    position: absolute;
+font-family: cursive;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(8, 10, 10);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: aliceblue;
+    display: block;
+    padding: 23px;
+     border-radius: 50px;
+     text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(1, 11, 19);
+    background-color: aliceblue;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 700px;
+    justify-content: center;
+    align-items:center;
+}
+#home::before{
+    content: "";
+    background :url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* client section */
+#client-section{
+    height: 344px;
+}
+#client-section{
+    content: "";
+    position: relative;
+    background: url('../bg.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#clients{
+    justify-content: ceter;
+    display:inline-flex;
+    align-items: center;
+    margin-left: 60px;
+    padding-top: 23px;
+}
+#clients img{
+    height: 130px;
+}
+/* services section */
+#services{
+    margin: 120px;
+}
+#services .box1{ 
+    border: 2px solid brown;
+    margin:-122px -110px;
+    border-radius: 23px;
+    color: rgb(27, 209, 30);
+    background-color: rgb(243, 243, 160);
+}
+#services .box1 img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services .box2{ 
+    border: 2px solid brown;
+    margin:132px -110px;
+    border-radius: 23px;
+    color: rgb(27, 209, 30);
+    background-color: rgb(243, 243, 160);
+
+}
+#services .box2 img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+#services .box3{ 
+    border: 2px solid brown;
+    margin: -121px -110px;
+    border-radius: 23px;
+    color: rgb(27, 209, 30);
+    background-color: rgb(243, 243, 160);
+}
+#services .box3 img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+/* utility store */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 12px;
+}
+.btn{
+    padding: 5px 11px;
+    margin: 17px 12px;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(6, 6, 5);
+    background-color: rgb(243, 239, 239);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
